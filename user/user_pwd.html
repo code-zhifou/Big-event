@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重置密码</title>
+    <!-- 导入layui样式和自定义样式 -->
+    <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <link rel="stylesheet" href="/assects/css/user/user_info.css">
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">重置密码</div>
+        <div class="layui-card-body">
+            <form class="layui-form" lay-filter="userpwd" action="" id="pwd_form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="red-tip">*</span>原密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="oldPwd" lay-verify="required||pwd" required placeholder="请输入原密码" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="red-tip">*</span>新密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="newPwd" lay-verify="required||pwd||samepwd" required placeholder="请输入新密码" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="red-tip">*</span>确认密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="resPwd" lay-verify="required||pwd" required placeholder="请输入新密码" autocomplete="off"
+                            class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                        <button type="reset" class="layui-btn layui-btn-primary" id="resbtn">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <script src="/assects/lib/jquery.js"></script>
+    <script src="/assects/js/baseAPI.js"></script>
+    <script src="/assects/js/user/user_pwd.js"></script>
+</body>
+
+</html>

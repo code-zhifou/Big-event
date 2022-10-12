@@ -1,0 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: url(/assects/images/user_info_bg.jpg) no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+
+body {
+    padding: 15px;
+}
+
+
+.red-tip{
+    position: relative;
+    color: red;
+    left: -5px;
+    top: 2px;
+}
+
+.layui-form-item{
+    width: 500px;
+}
+
+#btn-sub{
+    text-align: center;
+    padding-top: 10px;
+}

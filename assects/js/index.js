@@ -53,7 +53,7 @@ function getUserInfo() {
         //获取用户姓名
         var name = user.nickname || user.username
         // 设置用户名
-        $('.welcome').html('欢迎&nbsp;&nbsp;'+ name)
+        $('.welcome').html(name)
         // 设置用户头像
         if (user.user_pic !==null) {
             //将用户头像显示，隐藏文本头像
